@@ -1,0 +1,84 @@
+# ── Environment & Secrets ──────────────────────────────────────────────────────
+# NEVER commit .env files containing API keys or credentials
+.env
+.env.*
+!.env.example
+!**/.env.example
+*.key
+*.pem
+
+# ── Python ────────────────────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyo
+*.pyd
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+.eggs/
+.tox/
+.mypy_cache/
+.pytest_cache/
+.ruff_cache/
+.pytype/
+.coverage
+htmlcov/
+coverage.xml
+*.cover
+
+# ── Virtual Environments ──────────────────────────────────────────────────────
+venv/
+.venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# ── Node / Frontend ───────────────────────────────────────────────────────────
+node_modules/
+frontend/node_modules/
+dist/
+frontend/dist/
+frontend/build/
+frontend/.vite/
+.npm
+*.local
+
+# ── SQLite & Runtime Databases ─────────────────────────────────────────────────
+*.db
+*.db-journal
+*.sqlite
+*.sqlite3
+
+# ── Generated Runtime Data & Artifacts ─────────────────────────────────────────
+baselines/
+backend/baselines/
+captures/
+backend/captures/
+evidence/
+backend/evidence/
+reports/
+backend/reports/
+
+# ── Logs & Debugging ───────────────────────────────────────────────────────────
+*.log
+pip_debug.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# ── OS & IDE Files ─────────────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+desktop.ini
+*.swp
+*.swo
+.idea/
+.vscode/
+*.iml
+.gemini/
+.agents/
